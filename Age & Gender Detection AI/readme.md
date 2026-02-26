@@ -1,17 +1,16 @@
 🚀 Age & Gender Detection AI (Deep Learning Project)
 
-A deep learning–based web application that predicts age and gender from a human face image using Convolutional Neural Networks (CNN) and Computer Vision.
+A deep learning–based web application that predicts age and gender from a human face image using CNN and Computer Vision.
 
-This project demonstrates an end-to-end AI pipeline:
-
-Dataset → Model Training → Face Detection → Prediction → Web App Deployment
+This project demonstrates a complete AI pipeline:
+Dataset → Training → Face Detection → Prediction → Web Deployment
 
 🌐 Live Demo
 
 Deployed App:
 https://supereligible-katina-inattentively.ngrok-free.dev/
 
-Upload a face image and the model predicts:
+Upload any face image and the model predicts:
 
 🎂 Age
 
@@ -21,17 +20,17 @@ Upload a face image and the model predicts:
 
 This project uses deep learning and computer vision to build a real-time AI system that detects age and gender from facial images.
 
-The system:
+Pipeline:
 
-Takes an input image
+Upload image
 
-Detects face using OpenCV
+Detect face using OpenCV
 
-Processes image
+Preprocess image
 
-Predicts age and gender using CNN
+CNN predicts age & gender
 
-Displays result via web app
+Result shown in web app
 
 🧠 Tech Stack
 
@@ -41,7 +40,7 @@ TensorFlow / Keras
 
 OpenCV
 
-Streamlit (Web App)
+Streamlit
 
 NumPy
 
@@ -49,8 +48,9 @@ Google Colab
 
 📂 Dataset Used
 
-UTKFace Dataset
-Contains 20k+ face images labeled with:
+UTKFace Dataset (20k+ images)
+
+Each image contains:
 
 Age
 
@@ -58,36 +58,26 @@ Gender
 
 Ethnicity
 
-Dataset format:
-
-age_gender_race_date.jpg
-
-Example:
-
+Example filename format:
 25_0_2_201701161745.jpg
+
 🏗 Model Architecture
 
-Custom CNN model with:
+Custom CNN with multi-output prediction:
 
 Convolution layers
 
-MaxPooling
+MaxPooling layers
 
 Dense layers
 
-Multi-output prediction:
+Two outputs:
 
 Age (Regression)
 
 Gender (Binary classification)
 
-Outputs:
-
-Age → numerical value
-
-Gender → Male/Female
-
-Loss functions:
+Loss Functions
 
 Age → MAE
 
@@ -96,23 +86,26 @@ Gender → Binary Crossentropy
 ⚙️ Features
 
 ✔ Upload image
-✔ Automatic face detection
+✔ Face detection (OpenCV)
 ✔ Age prediction
 ✔ Gender prediction
-✔ Web-based UI
-✔ End-to-end deep learning pipeline
+✔ Streamlit web interface
+✔ End-to-end deep learning project
 
-🖥 How to Run Locally
-1️⃣ Clone repo
+🖥 Run Locally
+1. Clone Repository
+
 git clone https://github.com/Harsh28-raj/dl_projects.git
-cd Age & Gender Detection AI
-2️⃣ Install requirements
-pip install -r requirements.txt
-3️⃣ Run app
-streamlit run app.py
-📸 Demo Screenshot
 
-(You can add screenshot here later)
+cd "Age & Gender Detection AI"
+
+2. Install Requirements
+
+pip install -r requirements.txt
+
+3. Run App
+
+streamlit run app.py
 
 📊 Future Improvements
 
@@ -120,17 +113,15 @@ Improve age prediction accuracy
 
 Use pretrained models (MobileNet/EfficientNet)
 
-Better UI
+Multi-face detection
 
-Multiple face detection
+Better UI
 
 Deploy permanently on cloud
 
 Model optimization
 
 🎯 Learning Outcomes
-
-From this project I learned:
 
 CNN model building
 
@@ -140,7 +131,7 @@ Image preprocessing
 
 Face detection using OpenCV
 
-Model deployment using Streamlit
+Model deployment with Streamlit
 
 Real-world AI pipeline
 
@@ -152,6 +143,6 @@ AI/ML & Deep Learning Enthusiast
 GitHub:
 https://github.com/Harsh28-raj
 
-⭐ If you like this project
+⭐ Support
 
-Star the repo and connect with me.
+If you like this project, star the repo and connect with me.
