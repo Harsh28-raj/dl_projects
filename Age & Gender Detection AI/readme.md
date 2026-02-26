@@ -1,148 +1,105 @@
-🚀 Age & Gender Detection AI (Deep Learning Project)
+# 🚀 Age & Gender Detection AI — Deep Learning Web App
 
-A deep learning–based web application that predicts age and gender from a human face image using CNN and Computer Vision.
+An end-to-end deep learning system that predicts **age and gender from facial images** using CNN and computer vision, deployed as a live web application.
 
-This project demonstrates a complete AI pipeline:
-Dataset → Training → Face Detection → Prediction → Web Deployment
+This project demonstrates a real-world AI pipeline from training to deployment.
 
-🌐 Live Demo
+---
 
-Deployed App:
+## 🌐 Live Demo  
+**Web App:**  
 https://supereligible-katina-inattentively.ngrok-free.dev/
 
-Upload any face image and the model predicts:
+Upload any face image → model predicts:
+- Age  
+- Gender  
 
-🎂 Age
+---
 
-🧑 Gender
+## 🧠 Project Highlights
+- Built and trained custom CNN on UTKFace dataset (20k+ images)  
+- Multi-output model (age regression + gender classification)  
+- Real-time face detection using OpenCV  
+- Streamlit web app deployment  
+- End-to-end deep learning pipeline  
 
-📌 Project Overview
+---
 
-This project uses deep learning and computer vision to build a real-time AI system that detects age and gender from facial images.
+## ⚙️ Tech Stack
+**Deep Learning:** TensorFlow, Keras  
+**Computer Vision:** OpenCV  
+**Frontend/Web:** Streamlit  
+**Language:** Python  
+**Environment:** Google Colab  
 
-Pipeline:
+---
 
-Upload image
+## 🏗 Model Details
+Multi-output CNN architecture:
 
-Detect face using OpenCV
+- Convolution + MaxPooling layers  
+- Dense layers  
+- Two outputs:
+  - Age prediction (Regression — MAE loss)
+  - Gender prediction (Binary classification)
 
-Preprocess image
+Dataset: **UTKFace Dataset (20k+ images)**
 
-CNN predicts age & gender
+---
 
-Result shown in web app
+## 🧪 How It Works
+1. User uploads image  
+2. Face detected using OpenCV  
+3. Image preprocessed (resize + normalize)  
+4. CNN predicts age & gender  
+5. Result displayed on web UI  
 
-🧠 Tech Stack
+---
 
-Python
+## 💻 Run Locally
 
-TensorFlow / Keras
-
-OpenCV
-
-Streamlit
-
-NumPy
-
-Google Colab
-
-📂 Dataset Used
-
-UTKFace Dataset (20k+ images)
-
-Each image contains:
-
-Age
-
-Gender
-
-Ethnicity
-
-Example filename format:
-25_0_2_201701161745.jpg
-
-🏗 Model Architecture
-
-Custom CNN with multi-output prediction:
-
-Convolution layers
-
-MaxPooling layers
-
-Dense layers
-
-Two outputs:
-
-Age (Regression)
-
-Gender (Binary classification)
-
-Loss Functions
-
-Age → MAE
-
-Gender → Binary Crossentropy
-
-⚙️ Features
-
-✔ Upload image
-✔ Face detection (OpenCV)
-✔ Age prediction
-✔ Gender prediction
-✔ Streamlit web interface
-✔ End-to-end deep learning project
-
-🖥 Run Locally
-1. Clone Repository
-
+Clone repository:
+```bash
 git clone https://github.com/Harsh28-raj/dl_projects.git
-
 cd "Age & Gender Detection AI"
+```
 
-2. Install Requirements
-
+Install requirements:
+```bash
 pip install -r requirements.txt
+```
 
-3. Run App
-
+Run app:
+```bash
 streamlit run app.py
+```
 
-📊 Future Improvements
+---
 
-Improve age prediction accuracy
+## 📊 Current Limitations
+- Age prediction not perfectly accurate (complex problem)  
+- Single face detection  
+- Basic CNN architecture  
 
-Use pretrained models (MobileNet/EfficientNet)
+---
 
-Multi-face detection
+## 🔥 Future Improvements
+- Use pretrained models (MobileNet/EfficientNet)
+- Improve age accuracy
+- Multi-face detection
+- Better UI/UX
+- Permanent cloud deployment
 
-Better UI
+---
 
-Deploy permanently on cloud
+## 👨‍💻 Author
+**Harsh Raj**  
+AI & Deep Learning Enthusiast  
 
-Model optimization
-
-🎯 Learning Outcomes
-
-CNN model building
-
-Multi-output neural networks
-
-Image preprocessing
-
-Face detection using OpenCV
-
-Model deployment with Streamlit
-
-Real-world AI pipeline
-
-👨‍💻 Author
-
-Harsh Raj
-AI/ML & Deep Learning Enthusiast
-
-GitHub:
+GitHub:  
 https://github.com/Harsh28-raj
 
-⭐ Support
+---
 
-If you like this project, star the repo and connect with me.
+## ⭐ Support
+If you like this project, consider starring the repository.
